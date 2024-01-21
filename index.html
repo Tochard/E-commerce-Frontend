@@ -23,7 +23,7 @@
           <div>
             <a class="text-base" href="#"><img src="" alt="Logo" /></a>
           </div>
-          <div class="flex bg-white p-1.5 rounded-3xl w-9/12 relative">
+          <form class="flex bg-white p-1.5 rounded-3xl w-9/12 relative">
             <input
               type="text"
               class="rounded-3xl w-full outline-none text-black-75 px-4 pl-10"
@@ -40,7 +40,7 @@
             >
               Search
             </button>
-          </div>
+          </form>
         </div>
 
         <ul class="hidden md:flex space-x-6">
@@ -89,48 +89,268 @@
 
     <!-- carousel  -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden md:h-[550px]">
-             <!-- Item 1 -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                <img src="./images/carousel1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                <img src="./images/carousel2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                <img src="./images/carousel3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden md:h-[550px]">
+        <!-- Item 1 -->
+        <div class="hidden duration-[2000ms] ease-in-out" data-carousel-item>
+          <img
+            src="./images/carousel1.svg"
+            class="absolute block w-full object-cover h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
         </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            
+        <!-- Item 2 -->
+        <div class="hidden duration-[2000ms] ease-in-out" data-carousel-item>
+          <img
+            src="./images/carousel2.svg"
+            class="absolute block w-full object-cover h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
         </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-   
-      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-  
+        <!-- Item 3 -->
+        <div class="hidden duration-[2000ms] ease-in-out" data-carousel-item>
+          <img
+            src="./images/carousel3.svg"
+            class="absolute block w-full object-cover h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div
+        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+      >
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"
+        ></button>
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- cta  -->
+    <div class="bg-secondary-50 p-10 px-16 md:space-x-6 md:flex">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl text-primary-300 font-normal">
+          Discover the ultimate online shopping experience
+        </h2>
+      </div>
+      <div class="md:w-1/2">
+        <p class="text-lg text-primary-200">
+          Shop from a wide range of products and enjoy fast, reliable delivery.
+        </p>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="text-white bg-secondary-300 rounded-lg p-3 px-8 hover:bg-secondary-200"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="px-16 pt-16">
+      <div class="flex space-x-6 justify-between">
+        <h2 class="text-3xl font-semibold">Shop Our Top Categories</h2>
+      </div>
+      <div class="mt-6 grid grid-cols-3 gap-6 md:grid-cols-6">
+        <!-- card 1  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/furniture.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Furniture</h2>
+            </div>
+          </div>
+        </a>
+        <!-- card 2  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/fashion.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Fashion</h2>
+            </div>
+          </div>
+        </a>
+        <!-- card 3  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/tv.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Television</h2>
+            </div>
+          </div>
+        </a>
+        <!-- card 4  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/phone.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Phones</h2>
+            </div>
+          </div>
+        </a>
+        <!-- card 5  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/computer.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Computing</h2>
+            </div>
+          </div>
+        </a>
+        <!-- card 6  -->
+        <a href="#">
+          <div
+            class="relative h-36 w-full rounded-xl transition ease-in-out duration-700 hover:scale-105 md:h-40 lg:h-56"
+          >
+            <img
+              src="./images/sport.svg"
+              class="h-full w-full rounded-xl object-cover absolute top-0 left-0"
+              alt=""
+            />
+            <div
+              class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
+            ></div>
+            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
+              <h2 class="text-center font-medium">Sport Kits</h2>
+            </div>
+          </div>
+        </a>
+        <!-- <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
+        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
+        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
+        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
+        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div> -->
+      </div>
+    </section>
+
+    <section class="px-16 pt-16">
+      <div class="flex space-x-6 justify-between">
+        <h2 class="text-3xl font-semibold">Trending Products</h2>
+        <a
+          href="#"
+          class="p-1 px-4 rounded-3xl border border-2 border-grey-75 text-gray-600 flex justify-center items-center space-x-2"
+          >See all
+          <img src="./icons/arrow-left@3x.svg" class="pl-1 h-5 pt-1" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
   </body>
 </html>
