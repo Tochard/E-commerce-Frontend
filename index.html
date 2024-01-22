@@ -17,13 +17,16 @@
     />
   </head>
   <body>
+    <!-- top header  -->
     <div class="bg-primary-300 p-6 px-16">
       <div class="flex justify-between align-center text-white">
         <div class="w-full flex space-x-6 md:w-1/2">
           <div>
             <a class="text-base" href="#"><img src="" alt="Logo" /></a>
           </div>
-          <form class="flex bg-white p-1.5 rounded-3xl w-9/12 relative">
+          <form
+            class="hidden md:flex bg-white p-1.5 rounded-3xl w-9/12 relative"
+          >
             <input
               type="text"
               class="rounded-3xl w-full outline-none text-black-75 px-4 pl-10"
@@ -65,8 +68,10 @@
         </ul>
       </div>
     </div>
+
+    <!-- nav bar  -->
     <div class="text-white bg-secondary-300 p-5 px-16">
-      <ul class="flex space-x-8">
+      <ul class="hidden md:flex space-x-8">
         <li class="flex justify-center items-center space-x-1">
           <img src="./icons/menu@3x.svg" alt="" class="h-5" />
           <a class="text-base" href="#">Categories </a>
@@ -90,7 +95,7 @@
     <!-- carousel  -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden md:h-[550px]">
+      <div class="relative h-48 overflow-hidden md:h-[400px] lg:h-[550px]">
         <!-- Item 1 -->
         <div class="hidden duration-[2000ms] ease-in-out" data-carousel-item>
           <img
@@ -198,14 +203,18 @@
     </div>
 
     <!-- cta  -->
-    <div class="bg-secondary-50 p-10 px-16 md:space-x-6 md:flex">
+    <div
+      class="p-6 pb-10 bg-secondary-50 md:p-10 md:px-16 md:space-x-6 md:flex"
+    >
       <div class="md:w-1/2">
-        <h2 class="text-4xl text-primary-300 font-normal">
+        <h2
+          class="text-2xl text-primary-300 font-normal pb-2 md:text-3xl lg:text-4xl"
+        >
           Discover the ultimate online shopping experience
         </h2>
       </div>
       <div class="md:w-1/2">
-        <p class="text-lg text-primary-200">
+        <p class="text-base text-primary-200 md:text-lg">
           Shop from a wide range of products and enjoy fast, reliable delivery.
         </p>
         <div class="mt-6">
@@ -218,11 +227,16 @@
       </div>
     </div>
 
-    <section class="px-16 pt-16">
-      <div class="flex space-x-6 justify-between">
-        <h2 class="text-3xl font-semibold">Shop Our Top Categories</h2>
+    <!-- category   -->
+    <section class="p-6 md:px-16 md:pt-16">
+      <div class="flex space-x-6 justify-between mb-6">
+        <h2
+          class="text-xl font-semibold text-primary-300 md:text-2xl lg:text-3xl"
+        >
+          Shop Our Top Categories
+        </h2>
       </div>
-      <div class="mt-6 grid grid-cols-3 gap-6 md:grid-cols-6">
+      <div class="grid grid-cols-3 gap-3 md:gap-4 lg:grid-cols-6 lg:gap-6">
         <!-- card 1  -->
         <a href="#">
           <div
@@ -236,8 +250,10 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Furniture</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Furniture</h2>
             </div>
           </div>
         </a>
@@ -254,8 +270,10 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Fashion</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Fashion</h2>
             </div>
           </div>
         </a>
@@ -272,8 +290,10 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Television</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Television</h2>
             </div>
           </div>
         </a>
@@ -290,8 +310,10 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Phones</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Phones</h2>
             </div>
           </div>
         </a>
@@ -308,8 +330,10 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Computing</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Computing</h2>
             </div>
           </div>
         </a>
@@ -326,28 +350,501 @@
             <div
               class="bg-primary-300 h-full w-full absolute top-0 left-0 opacity-25 rounded-xl"
             ></div>
-            <div class="absolute top-[15%] mx-auto text-2xl text-white w-full">
-              <h2 class="text-center font-medium">Sport Kits</h2>
+            <div
+              class="absolute top-[20%] mx-auto text-base text-white w-full md:text-base lg:text-xl"
+            >
+              <h2 class="text-center font-normal lg:font-medium">Sport Kits</h2>
             </div>
           </div>
         </a>
-        <!-- <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
-        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
-        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
-        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div>
-        <div class="h-36 w-full rounded-xl bg-red-300 md:h-40 lg:h-56"></div> -->
       </div>
     </section>
 
-    <section class="px-16 pt-16">
-      <div class="flex space-x-6 justify-between">
-        <h2 class="text-3xl font-semibold">Trending Products</h2>
+    <!-- SECTION TWO FOR TRENDING PRODUCTS  -->
+
+    <section class="relative p-6 md:px-16 md:pt-16">
+      <div class="flex space-x-6 justify-between items-center mb-6">
+        <h2
+          class="text-xl font-semibold text-primary-300 md:text-2xl lg:text-3xl"
+        >
+          Trending Products
+        </h2>
         <a
           href="#"
-          class="p-1 px-4 rounded-3xl border border-2 border-grey-75 text-gray-600 flex justify-center items-center space-x-2"
-          >See all
+          class="p-1 px-4 rounded-3xl border-2 border-grey-75 text-gray-600 flex justify-center items-center space-x-2"
+          ><div>See all</div>
           <img src="./icons/arrow-left@3x.svg" class="pl-1 h-5 pt-1" alt="" />
         </a>
+      </div>
+      <div class="flex space-x-6 overflow-x-scroll no-scrollbar">
+        <!-- arrow left  -->
+        <div
+          class="hidden lg:flex justify-center items-center absolute left-[3%] top-[45%] z-10 bg-white opacity-70 rounded-full p-2 h-15 w-15 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500 shadow-sm shadow-grey-300 border-1 border-grey-200"
+        >
+          <img src="./icons/arro-left@3x.svg" alt="" />
+        </div>
+        <!-- arrow right  -->
+        <div
+          class="hidden lg:flex justify-center items-center absolute right-[3%] top-[45%] z-10 bg-white opacity-70 rounded-full p-2 h-15 w-15 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500 shadow-sm shadow-grey-300 border-1 border-grey-200"
+        >
+          <img src="./icons/arro-right@3x.svg" alt="" />
+        </div>
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px] -ml-6">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/laptop.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/phone.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/sneakers.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/bag.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+      </div>
+    </section>
+
+    <!-- SECTION TWO FOR RECOMMENDED PRODUCTS  -->
+    <section class="relative p-6 md:px-16 md:pt-16">
+      <div class="flex space-x-6 justify-between items-center mb-6">
+        <h2
+          class="text-xl font-semibold text-primary-300 md:text-2xl lg:text-3xl"
+        >
+          Recommended Products
+        </h2>
+        <a
+          href="#"
+          class="p-1 px-4 rounded-3xl border-2 border-grey-75 text-gray-600 flex justify-center items-center space-x-2"
+          ><div>See all</div>
+          <img src="./icons/arrow-left@3x.svg" class="pl-1 h-5 pt-1" alt="" />
+        </a>
+      </div>
+      <div class="flex space-x-6 overflow-x-scroll no-scrollbar">
+        <!-- arrow left  -->
+        <div
+          class="hidden lg:flex justify-center items-center absolute left-[3%] top-[45%] z-10 bg-white opacity-70 rounded-full p-2 h-15 w-15 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500 shadow-sm shadow-grey-300 border-1 border-grey-200"
+        >
+          <img src="./icons/arro-left@3x.svg" alt="" />
+        </div>
+        <!-- arrow right  -->
+        <div
+          class="hidden lg:flex justify-center items-center absolute right-[3%] top-[45%] z-10 bg-white opacity-70 rounded-full p-2 h-15 w-15 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500 shadow-sm shadow-grey-300 border-1 border-grey-200"
+        >
+          <img src="./icons/arro-right@3x.svg" alt="" />
+        </div>
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px] -ml-6">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/laptop.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/phone.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/sneakers.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+        <!-- card 1  -->
+        <a href="#">
+          <div class="w-[200px] md:w-[265px]">
+            <div
+              class="relative bg-gray-100 h-[200px] rounded-3xl border flex justify-center items-center md:h-[265px]"
+            >
+              <img
+                src="./images/products/bag.png"
+                alt=""
+                class="rounded-3xl object-contain w-[150px] transition ease-in-out duration-700 hover:scale-110 md:w-[200px]"
+              />
+              <div
+                class="bg-white rounded-full p-1 h-7 w-7 absolute top-2 right-2 md:p-2 md:h-10 md:w-10"
+              >
+                <img src="./icons/heart@3x.svg" alt="" />
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="flex justify-between">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Macbook Pro 13”
+                </h3>
+                <h4
+                  class="text-base font-medium flex justify-center items-center space-x-2"
+                >
+                  <img src="./icons/naira.svg" class="pr-1 h-4" alt="" />2m
+                </h4>
+              </div>
+              <div class="text-sm py-2">256, 8 core GPU, 8GB</div>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="text-[8px] text-grey-200 flex justify-center items-center space-x-1 md:text-[10px]"
+                >
+                  <img src="./icons/Rating@3x.svg" class="h-4" alt="" />
+                  <div>35 Reviews</div>
+                </h4>
+                <div
+                  class="border-2 border-grey-200 rounded-full p-1 h-7 w-17 flex justify-center items-center md:h-10 md:w-10"
+                >
+                  <img
+                    src="./icons/shopping-cart@3x.svg"
+                    class="h-4 md:h-5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- card end  -->
+      </div>
+    </section>
+
+    <section class="p-6 md:px-16 md:pt-16">
+      <div class="relative">
+        <img
+          src="./images/Frame 365@3x.svg"
+          class="h-full object-cover"
+          alt=""
+        />
+        <div class="absolute z-10 top-[50%] translate-y-[-50%]">
+          <div
+            class="text-lg px-3 z-10 font-medium text-white text-center md:font-semibold md:px-6 md:text-xl lg:px-10 lg:text-3xl"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare
+            sollicitudin nunc, consectetur tincidunt ligula
+          </div>
+          <div class="hidden mt-6 text-center md:block">
+            <a
+              href="#"
+              class="text-white bg-secondary-300 rounded-lg p-3 px-8 hover:bg-secondary-200"
+              >Shop Now</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
