@@ -9,7 +9,12 @@
     font-family: "Lato", sans-serif;
   }
 
-  .section {
-    @apply;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
